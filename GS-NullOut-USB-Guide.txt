@@ -1,0 +1,69 @@
+HOW TO USE GS NULLOUT V1
+By GhostStrats
+=======================
+
+1. Boot into Linux (live USB or a regular Linux installation).
+2. Insert the second USB drive containing gsnull.sh.
+3. Open that USB drive in your file manager.
+4. Right-click an empty area of the folder and select "Open in Terminal."
+   (The menu wording may vary by desktop.)
+5. Test it first with the SAFE command:
+
+      bash gsnull.sh --test
+
+   This uses a 10-second inactivity countdown. It DOES NOT shut down.
+   Move the mouse or press a key to check whether the timer resets.
+6. If the test works, save anything important and start normal mode:
+
+      bash gsnull.sh
+
+   The system will be asked to shut down after 60 idle seconds.
+
+WHAT IS GS NULLOUT?
+A free, portable Linux privacy experiment. GS NullOut watches the idle
+(time since the last keyboard or mouse activity) reported by supported
+Linux desktops. After 60 seconds of inactivity, it asks Linux to
+shut down normally.
+
+WHILE IT'S RUNNING
+- Yellow countdown: time remaining.
+- Red warning: the final 15 seconds; a sound may play.
+- Mouse or keyboard activity resets the automatic idle countdown.
+- Keep the Terminal running (you can minimize it).
+- To stop GS NullOut: focus the Terminal and press Ctrl+C.
+- The script does not start automatically on your next boot.
+
+WHY A SECOND USB?
+Non-persistent live Linux sessions normally start fresh on reboot.
+Keeping gsnull.sh on a separate USB means you don't need to download
+it again after each boot. No installation or internet is needed on
+compatible systems with the necessary desktop facilities already there.
+
+IF THERE IS A PROBLEM
+- "File not found": Open the Terminal in the same folder as gsnull.sh.
+- Timer doesn't change: Stop with Ctrl+C; check desktop compatibility.
+- No supported idle monitor: GS NullOut may offer MANUAL mode.
+  Manual mode detects ONLY key presses inside its own Terminal. Mouse
+  movement and work in other windows will NOT reset it. Choose N if
+  you need a system-wide inactivity failsafe.
+- No sound: Some Linux systems disable terminal/desktop warning sounds.
+- Shutdown may be blocked by Linux permissions or system settings.
+
+IMPORTANT SAFETY & PRIVACY NOTICE
+GS NullOut requests a NORMAL shutdown. It does NOT securely erase
+files, wipe RAM, detect emergencies, or guarantee privacy. Temporary
+changes on a non-persistent live OS are generally discarded on
+shutdown, but data deliberately saved to drives or persistent
+storage can remain. Regular installed Linux systems keep saved files.
+
+EDUCATIONAL PURPOSES / DISCLAIMER
+GS NullOut V1 is a personal privacy experiment built by GhostStrats
+and shared free with the community for educational and testing
+purposes only. Provided AS IS, with no warranty or guarantee.
+USE AT YOUR OWN RISK. GhostStrats is not responsible for lost or
+unsaved data, interrupted work, or other consequences of use,
+to the extent permitted by applicable law. Save work, keep backups,
+and try --test before using normal shutdown mode.
+
+ONE SCRIPT. ONE USB. SIXTY SECONDS.
+Privacy is an Illusion.
