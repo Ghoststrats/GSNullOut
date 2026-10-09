@@ -1,4 +1,4 @@
-# GS NullOut V1
+# GS NullOut
 **Free, Portable Linux Privacy Tool | Created by GhostStrats**
 
 **One Script. One USB. Sixty Seconds.**
